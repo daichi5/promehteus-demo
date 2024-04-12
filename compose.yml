@@ -31,8 +31,6 @@ services:
       context: ./api
       dockerfile: ./Dockerfile.dev
     command: pnpm dev
-    ports:
-      - "127.0.0.1:3333:3000"
     volumes:
       - './api:/app'
     networks:
