@@ -10,6 +10,15 @@ services:
       - './.volumes/prometheus:/prometheus'
     networks:
       - demo
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3334:3000"
+    networks:
+      - demo
+    volumes:
+      - './.volumes/grafana:/var/lib/grafana'
+
   node-exporter:
     image: prom/node-exporter
     ports:
