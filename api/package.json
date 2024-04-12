@@ -5,11 +5,12 @@
   "main": "index.js",
   "engines": {
     "node": "21.x",
-    "pnpm": "8.15.6",
+    "pnpm": "8.15.x",
     "npm": "please use pnpm",
     "yarn": "please use pnpm"
   },
   "scripts": {
+    "dev": "ts-node-dev src/index.ts",
     "build": "tsc -p tsconfig.json",
     "start": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   }
 }
