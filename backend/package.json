@@ -10,9 +10,14 @@
     "yarn": "please use pnpm"
   },
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.26.2"
+  }
 }
