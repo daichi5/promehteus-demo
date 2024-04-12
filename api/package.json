@@ -1,17 +1,17 @@
 {
-  "name": "backend",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "21.0.0",
+    "node": "21.x",
     "pnpm": "8.15.6",
     "npm": "please use pnpm",
     "yarn": "please use pnpm"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node index.js",
+    "start": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
