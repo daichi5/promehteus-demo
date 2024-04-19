@@ -14,3 +14,11 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ["nginx-exporter:9113"]
+
+rule_files:
+  - rules.yml
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ["alertmanager:9093"]
